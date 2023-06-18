@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   try {
     const products = Product.getAllProducts();
     res.json(products);
-  } catch (error) {
+  } catch (error) { 
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
